@@ -10,10 +10,15 @@ public class Program {
         //System.out.println("Enter 2nd number: ");
         int num2 = scanner.nextInt();
 
-        int result = 0;
-        result = num1 + num2;
+        int sum = add(num1, num2);
 
-        System.out.println(result);
+        System.out.println(sum);
 
+        scanner.close();
     }//end main
+
+    public static int add(int num1, int num2)
+    {
+        return num1 + num2;
+    }
 }//end class
